@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MANAOBOX — Digital Excellence</title>
+    <style>
+        :root { --bg: #0a0a0a; --fg: #ffffff; --accent: #888888; --border: rgba(255,255,255,0.1); --font: sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: var(--bg); color: var(--fg); font-family: var(--font); line-height: 1.5; -webkit-font-smoothing: antialiased; }
+        .mb-container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+        .mb-header { padding: 40px 0; border-bottom: 1px solid var(--border); }
+        .mb-header .mb-container { display: flex; justify-content: space-between; align-items: center; }
+        .mb-logo { font-weight: 900; letter-spacing: 0.2em; text-transform: uppercase; }
+        .mb-nav a { color: var(--accent); text-decoration: none; margin-left: 30px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; }
+        .mb-hero { padding: 120px 0 80px; }
+        .mb-hero h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 800; line-height: 1.1; margin-bottom: 20px; }
+        .mb-hero h1 span { color: var(--accent); }
+        .mb-subtitle { font-size: 1.2rem; color: var(--accent); max-width: 600px; }
+        .mb-section { padding: 100px 0; border-top: 1px solid var(--border); }
+        .mb-eyebrow { text-transform: uppercase; color: var(--accent); font-size: 0.7rem; letter-spacing: 0.3em; margin-bottom: 15px; font-weight: 700; }
+        .mb-section-title { font-size: 2rem; margin-bottom: 30px; font-weight: 800; }
+        .mb-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; color: var(--accent); }
+        .mb-project-card { border: 1px solid var(--border); padding: 30px; display: flex; justify-content: space-between; align-items: flex-end; }
+        .mb-project-info h3 { font-size: 1.5rem; margin-bottom: 10px; }
+        .mb-btn { display: inline-block; padding: 10px 20px; border: 1px solid var(--fg); color: var(--fg); text-decoration: none; font-weight: 700; font-size: 0.8rem; margin-top: 20px; }
+        .mb-mail-link { font-size: clamp(1.2rem, 3vw, 2.5rem); font-weight: 800; color: var(--fg); text-decoration: none; border-bottom: 2px solid var(--fg); }
+        .mb-footer { padding: 50px 0; border-top: 1px solid var(--border); color: var(--accent); font-size: 0.75rem; }
+        .mb-footer-grid { display: flex; justify-content: space-between; }
+        @media (max-width: 768px) { .mb-grid { grid-template-columns: 1fr; } .mb-project-card { flex-direction: column; align-items: flex-start; gap: 20px; } }
+    </style>
+</head>
+<body>
+
+<header class="mb-header">
+    <div class="mb-container">
+        <div class="mb-logo">MANAOBOX</div>
+        <nav class="mb-nav">
+            <a href="#vision">Vision</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="mb-hero">
+        <div class="mb-container">
+            <h1>Building the next <br><span>Digital Monuments.</span></h1>
+            <p class="mb-subtitle">Based in Germany. Operating globally. We create platforms where technology meets collective human experience.</p>
+        </div>
+    </section>
+
+    <section id="vision" class="mb-section">
+        <div class="mb-container">
+            <p class="mb-eyebrow">Our Vision</p>
+            <h2 class="mb-section-title">Beyond the Surface.</h2>
+            <div class="mb-grid">
+                <p>MANAOBOX is a digital studio focused on high-scale web architectures and collective digital art. We create digital assets that are built to last.</p>
+                <p>Our approach combines engineering precision with a global mindset. We believe in the power of the "Human Element" in a digital world.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="mb-section">
+        <div class="mb-container">
+            <p class="mb-eyebrow">Flagship Project</p>
+            <div class="mb-project-card">
+                <div class="mb-project-info">
+                    <h3>THE MILLION FACES</h3>
+                    <p>A global community artwork of 1,000,000 slots. Our first major contribution to the digital art world.</p>
+                    <a href="https://themillionfaces.com" target="_blank" class="mb-btn">Explore Project</a>
+                </div>
+                <div class="mb-project-status">Live — 2026</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="mb-section">
+        <div class="mb-container">
+            <p class="mb-eyebrow">Contact</p>
+            <h2 class="mb-section-title">Let’s connect.</h2>
+            <a href="mailto:info@manaobox.de" class="mb-mail-link">info@manaobox.de</a>
+        </div>
+    </section>
+</main>
+
+<footer class="mb-footer">
+    <div class="mb-container">
+        <div class="mb-footer-grid">
+            <p>&copy; 2026 MANAOBOX GmbH</p>
+            <p><a href="#" style="color:var(--accent); text-decoration:none;">Privacy & Imprint</a></p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
